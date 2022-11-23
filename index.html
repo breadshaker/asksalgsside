@@ -143,44 +143,6 @@
 
 <div class="site-header-spacer"></div>
 
-<script>
-    // ÅPNE OG LUKKE HOVEDMENY PÅ MOBIL
-    var headerMenuButton = document.querySelector(".site-header__menu-btn");
-    var siteMenu = document.querySelector(".site-header__nav-wrap");
-
-    headerMenuButton.addEventListener('click', (e) => {
-        headerMenuButton.classList.toggle("close");
-        siteMenu.classList.toggle("open");
-    });
-
-    // ÅPNE OG LUKKE UNDERMENY PÅ MOBIL OG DESKTOP
-    var siteMenuDropdownButtons = document.querySelectorAll(".site-header__nav__list__item__btn");
-
-    siteMenuDropdownButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            button.classList.toggle("close");
-            button.nextElementSibling.classList.toggle("open");
-        });
-    });
-
-    // SKJULE HEADER VED SCROLL NED OG VISE VED SCROLL OPP
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("siteHeader").style.top = "0";
-        } else {
-            document.getElementById("siteHeader").style.top = "-110px";
-        }
-        prevScrollpos = currentScrollPos;
-        if (prevScrollpos > 100) {
-            document.getElementById("headerTrialBtn").classList.add("fixed");
-        } else {
-            document.getElementById("headerTrialBtn").classList.remove("fixed");
-        }
-    }
-</script>
-
 
 <section class="hero" aria-labelledby="headlineHero">
     <div class="hero__main">
@@ -569,6 +531,44 @@
         
     </div>
 </footer>
+
+<script>
+    // ÅPNE OG LUKKE HOVEDMENY PÅ MOBIL
+    var headerMenuButton = document.querySelector(".site-header__menu-btn");
+    var siteMenu = document.querySelector(".site-header__nav-wrap");
+
+    headerMenuButton.addEventListener('click', (e) => {
+        headerMenuButton.classList.toggle("close");
+        siteMenu.classList.toggle("open");
+    });
+
+    // ÅPNE OG LUKKE UNDERMENY PÅ MOBIL OG DESKTOP
+    var siteMenuDropdownButtons = document.querySelectorAll(".site-header__nav__list__item__btn");
+
+    siteMenuDropdownButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            button.classList.toggle("close");
+            button.nextElementSibling.classList.toggle("open");
+        });
+    });
+
+    // SKJULE HEADER VED SCROLL NED OG VISE VED SCROLL OPP
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("siteHeader").style.top = "0";
+        } else {
+            document.getElementById("siteHeader").style.top = "-110px";
+        }
+        prevScrollpos = currentScrollPos;
+        if (prevScrollpos > 100) {
+            document.getElementById("headerTrialBtn").classList.add("fixed");
+        } else {
+            document.getElementById("headerTrialBtn").classList.remove("fixed");
+        }
+    }
+</script>
 
 </body>
 
