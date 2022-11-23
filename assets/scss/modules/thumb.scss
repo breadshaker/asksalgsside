@@ -1,0 +1,21 @@
+.thumb-wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 273px;
+    justify-content: center;
+    grid-row-gap: 54px;
+    grid-column-gap: 36px;
+    margin: 96px 0;
+}
+
+@media only screen and (min-width: 700px) {
+    .thumb-wrap {
+        grid-template-columns: 273px 273px;
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .thumb-wrap {
+        grid-template-columns: 273px 273px 273px 273px;
+    }
+}

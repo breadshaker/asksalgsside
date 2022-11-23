@@ -1,0 +1,130 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 32px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14), 0px 2px 12px 0px rgba(51,23,75,0.14); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14), 0px 2px 12px 0px rgba(51,23,75,0.14);
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12), 0px 4px 16px 0px rgba(51,23,75,0.12); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12), 0px 4px 16px 0px rgba(51,23,75,0.12);
+}
+
+.card__content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card__headline {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: var(--color-headline);
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card__main {
+    flex-grow: 1;
+}
+
+.card__footer {
+    margin-top: 24px;
+}
+
+.card__footer__play {
+    display: block;
+    width: calc(100% + 22px);
+    margin-left: -11px;
+    margin-bottom: -11px;
+    background-color: #fff;
+    background-position: center left 11px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='18px' height='18px' viewBox='0 0 18 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Sider' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Stil' transform='translate(-480.000000, -2390.000000)'%3E%3Cg id='Group-18' transform='translate(480.000000, 2390.000000)'%3E%3Ccircle id='Oval' stroke='%23833AC1' cx='9' cy='9' r='8.5'%3E%3C/circle%3E%3Cpolygon id='Triangle' fill='%23833AC1' transform='translate(10.000000, 9.000000) rotate(-270.000000) translate(-10.000000, -9.000000) ' points='10 6 14 12 6 12'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding-left: 36px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: var(--color-askPurple-100);
+    transition: background-color .4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card__footer__play:hover {
+    background-color: var(--color-askPurple-20);
+    color: var(--color-askPurple-120);
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='18px' height='18px' viewBox='0 0 18 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Sider' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Stil' transform='translate(-511.000000, -2390.000000)'%3E%3Cg id='Group-18-Copy' transform='translate(511.000000, 2390.000000)'%3E%3Ccircle id='Oval' stroke='%235C2989' cx='9' cy='9' r='8.5'%3E%3C/circle%3E%3Cpolygon id='Triangle' fill='%235C2989' transform='translate(10.000000, 9.000000) rotate(-270.000000) translate(-10.000000, -9.000000) ' points='10 6 14 12 6 12'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.card__figure {
+    display: block;
+}
+
+.card__figure__img {
+    display: block;
+    width: 100%;
+}
+
+.card__figure__play {
+    display: block;
+    position: relative;
+}
+
+.card__figure__play:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -46px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.25);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='86px' height='84px' viewBox='0 0 86 84' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Sider' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Stil' transform='translate(-1606.000000, -1622.000000)'%3E%3Cg id='Group-20' transform='translate(1606.000000, 1622.000000)'%3E%3Cellipse id='Oval' stroke='%23FFFFFF' stroke-width='4' cx='42.6111111' cy='42' rx='40.6111111' ry='40'%3E%3C/ellipse%3E%3Cpath d='M51.2937326,29.2288857 L66.0865547,54.7425905 C66.917613,56.1759461 66.4293545,58.0116161 64.9959989,58.8426744 C64.5388103,59.1077519 64.0197114,59.2473545 63.4912349,59.2473545 L33.9055905,59.2473545 C32.2487363,59.2473545 30.9055905,57.9042087 30.9055905,56.2473545 C30.9055905,55.7188779 31.0451932,55.199779 31.3102707,54.7425905 L46.1030928,29.2288857 C46.9341511,27.7955301 48.7698211,27.3072716 50.2031767,28.1383298 C50.6555216,28.400599 51.0314635,28.7765409 51.2937326,29.2288857 Z' id='Triangle' fill='%23FFFFFF' transform='translate(48.698413, 42.000000) rotate(-270.000000) translate(-48.698413, -42.000000) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transition: background-color .4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card__figure__play:hover:after {
+    background-color: var(--color-askPurple-100);
+}
+
+.card__person {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 12px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card__person__img {
+    display: block;
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card__person__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-coolGray-120);
+    display: block;
+}
+
+.card__person__title {
+    font-size: 14px;
+    line-height: 18px;
+}

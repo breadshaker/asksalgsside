@@ -1,0 +1,165 @@
+.intro-bg {
+    position: relative;
+    background-color: var(--color-coolGray-20);
+}
+
+.intro-bg-arch {
+    position: relative;
+    width: 100%;
+    height: 7vw;
+    margin-bottom: -1px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='414px' height='34px' viewBox='0 0 414 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M413.999645,4.94401616e-14 L413.999,34 L0,34 L-3.66822065e-14,0.0930805195 C56.2656254,18.4872313 128.31652,29.5314548 206.857624,29.5314548 C285.531121,29.5314548 357.692509,18.4499667 413.999645,4.94401616e-14 Z' id='Combined-Shape' fill='%23F8F7F8'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.intro-headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--color-headline);
+}
+
+.intro-lead {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.intro-body {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.intro-lead p,
+.intro-body p {
+    margin: 24px 0 0 0;
+}
+
+.intro-wrap01 {
+    position: relative;
+    margin: 0 auto;
+    padding: 64px 32px 32px 32px;
+    max-width: 770px;
+    text-align: center;
+}
+
+.intro-wrap02 {
+    position: relative;
+    margin: 0 auto;
+    padding: 64px 32px 32px 32px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.intro-wrap02 .intro-lead:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.intro-wrap03 {
+    position: relative;
+    margin: 0 auto;
+    padding: 96px 32px 64px 32px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.intro-wrap03 .intro-lead {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+.intro-wrap03 .intro-body {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 540px;
+}
+
+.intro-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    grid-column-gap: 36px;
+    padding: 32px;
+    width: 100%;
+    max-width: 464px;
+    margin: 0 auto;
+}
+
+.intro-signature {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-gap: 16px;
+    margin-top: 32px;
+}
+
+.intro-signature__sign {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.intro-signature__img {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.intro-signature__text {
+    text-align: left;
+}
+
+.intro-signature__text__name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.intro-signature__text__title {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media only screen and (min-width: 700px) {
+    .intro-lead {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .intro-bg-arch {
+        height: 11vw;
+        background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='1536px' height='182px' viewBox='0 0 1536 182' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M9.75967445e-14,3.78226079e-13 C155.800576,57.8379889 334.586195,104.890235 526.84396,135.487062 C930.829238,199.778173 1300.5868,176.499615 1536.00028,88.2747702 L1536,182 L0.001,182 L9.75967445e-14,3.78226079e-13 Z' id='Combined-Shape' fill='%23F8F7F8'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .intro-wrap01 {
+        max-width: 864px;
+    }
+    .intro-wrap02 {
+        padding: 96px 32px 32px 32px;
+    }
+    .intro-wrap03 {
+        padding: 128px 32px 96px 32px;
+    }
+    .intro-headline {
+        font-size: 44px;
+        line-height: 52px;
+    }
+    .intro-lead{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .intro-cards {
+        max-width: 1264px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

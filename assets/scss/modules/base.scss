@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--color-askPurple-180: #1A0C27;
+	--color-askPurple-160: #30194A;
+	--color-askPurple-140: #4A2470;
+	--color-askPurple-120: #652F98;
+	--color-askPurple-100: #833AC1;
+	--color-askPurple-80: #9D64CF;
+	--color-askPurple-60: #B68ADC;
+	--color-askPurple-40: #CEB1E8;
+	--color-askPurple-20: #E6D8F3;
+
+	--color-askGreen-180: #0C251A;
+	--color-askGreen-160: #174632;
+	--color-askGreen-140: #226A4B;
+	--color-askGreen-120: #2F9066;
+	--color-askGreen-100: #3CB882;
+	--color-askGreen-80: #69C79C;
+	--color-askGreen-60: #8FD5B5;
+	--color-askGreen-40: #B4E3CE;
+	--color-askGreen-20: #D8F1E6;
+
+	--color-askYellow-180: #33290C;
+	--color-askYellow-160: #604E19;
+	--color-askYellow-140: #927625;
+	--color-askYellow-120: #C7A031;
+	--color-askYellow-100: #FFCD3E;
+	--color-askYellow-80: #FFD869;
+	--color-askYellow-60: #FFE28F;
+	--color-askYellow-40: #FFECB4;
+	--color-askYellow-20: #FFF5D8;
+
+	--color-coolGray-180: #150E1B;
+	--color-coolGray-160: #1F1A25;
+	--color-coolGray-140: #292430;
+	--color-coolGray-120: #352F3B;
+	--color-coolGray-100: #403A47;
+	--color-coolGray-80: #6B646F;
+	--color-coolGray-60: #98929A;
+	--color-coolGray-40: #C7C3C8;
+	--color-coolGray-20: #F8F7F8;
+
+	--color-red-180: #7D1705;
+	--color-red-160: #961C07;
+	--color-red-140: #B12209;
+	--color-red-120: #CB2709;
+	--color-red-100: #E72D0A;
+	--color-red-80: #FB6550;
+	--color-red-60: #FF9489;
+	--color-red-40: #FFC2BF;
+	--color-red-20: #FFF0F0;
+
+	--color-headline: var(--color-coolGray-140);
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: #fff;
+	color: var(--color-coolGray-100);
+    font-family: "Nunito", sans-serif;
+}
+
+img, video {
+	max-width: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+	color: var(--color-askPurple-100);
+    text-decoration: none;
+}
+
+em {
+	font-style: italic;
+}
+
+a:hover {
+
+}
+
+@media only screen and (min-width: 760px) {
+
+}
+@media only screen and (min-width: 1000px) {
+
+}
+@media only screen and (min-width: 1280px) {
+
+}
+@media only screen and (min-width: 1800px) {
+
+}
