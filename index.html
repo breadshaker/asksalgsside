@@ -143,18 +143,27 @@
 
 <div class="site-header-spacer"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    $(".site-header__menu-btn").on("click", function() {
-        $(this).toggleClass("close");
-        $(".site-header__nav-wrap").toggleClass("open");
+    // ÅPNE OG LUKKE HOVEDMENY PÅ MOBIL
+    var headerMenuButton = document.querySelector(".site-header__menu-btn");
+    var siteMenu = document.querySelector(".site-header__nav-wrap");
+
+    headerMenuButton.addEventListener('click', (e) => {
+        headerMenuButton.classList.toggle("close");
+        siteMenu.classList.toggle("open");
     });
 
-    $(".site-header__nav__list__item__btn").on("click", function() {
-        $(this).toggleClass("close");
-        $(this).siblings(".site-header__subnav").toggleClass("open");
+    // ÅPNE OG LUKKE UNDERMENY PÅ MOBIL OG DESKTOP
+    var siteMenuDropdownButtons = document.querySelectorAll(".site-header__nav__list__item__btn");
+
+    siteMenuDropdownButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            button.classList.toggle("close");
+            button.nextElementSibling.classList.toggle("open");
+        });
     });
-    
+
+    // SKJULE HEADER VED SCROLL NED OG VISE VED SCROLL OPP
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
