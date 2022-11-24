@@ -336,7 +336,7 @@
     .site-header__nav__list {
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 32px;
+        grid-gap: 8px;
     }
     .site-header__nav__list__item {
         border-bottom: none;
@@ -348,16 +348,22 @@
         font-size: 16px;
         line-height: 24px;
         transition: color .4s cubic-bezier(0.25, 1, 0.5, 1);
+        line-height: 40px;
+        padding: 0 12px;
+        border-radius: 6px;
+        transition: background-color .4s cubic-bezier(0.25, 1, 0.5, 1);
     }
     .site-header__nav__list__item__link:hover,
     .site-header__nav__list__item__btn:hover {
         color: var(--color-askPurple-100);
+        background: var(--color-askPurple-20);
+        color: var(--color-coolGray-140);
     }
     .site-header__nav__list__item__btn {
-        padding-right: 24px;
+        padding-right: 32px;
     }
     .site-header__nav__list__item__btn:after {
-        right: 0;
+        right: 8px;
     }
     .site-header__buttons {
         display: flex;
