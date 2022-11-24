@@ -8,6 +8,7 @@
     background: #fff;
     background-color: #fff;
     transition: top 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition-delay: 0.5s;
 }
 
 .site-header:after {
@@ -300,7 +301,7 @@
     top: -82px;
     left: 17px;
     z-index: 1;
-    transition: top .4s ease-in;
+    transition: top 180ms ease-in;
 }
 
 #headerTrialBtn.fixed {

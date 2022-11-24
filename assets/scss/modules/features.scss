@@ -6,8 +6,8 @@
 
 .features__headline {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 34px;
     color: var(--color-headline);
     text-align: center;
     position: relative;
@@ -63,6 +63,7 @@
     text-align: center;
     position: relative;
     width: 100%;
+    max-width: 280px;
     margin: 0 auto;
 }
 
@@ -183,6 +184,16 @@
     line-height: 18px;
     font-style: italic;
     color: var(--color-coolGray-80);
+}
+
+@media only screen and (min-width: 500px) {
+    .features__headline {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .features-live__headline {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (min-width: 700px) {
