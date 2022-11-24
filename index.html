@@ -556,13 +556,13 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        if (prevScrollpos > currentScrollPos || prevScrollpos < 200 ) {
             document.getElementById("siteHeader").style.top = "0";
         } else {
             document.getElementById("siteHeader").style.top = "-110px";
         }
         prevScrollpos = currentScrollPos;
-        if (prevScrollpos > 100) {
+        if (prevScrollpos > 250) {
             document.getElementById("headerTrialBtn").classList.add("fixed");
         } else {
             document.getElementById("headerTrialBtn").classList.remove("fixed");
