@@ -97,6 +97,10 @@
     background-color: var(--color-askYellow-100);
 }
 
+#heroBuyBtn {
+    min-width: 130px;
+}
+
 @media only screen and (min-width: 370px) {
     .hero__img {
         width: 240px;
@@ -184,6 +188,9 @@
         right: -30px;
         width: 54px;
         height: 54px;
+    }
+    #heroBuyBtn {
+        min-width: auto;
     }
 }
 
