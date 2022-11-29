@@ -57,8 +57,10 @@
 
 .features-live__headline {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
+    // font-size: 36px;
+    // line-height: 44px;
+    font-size: 24px;
+    line-height: 28px;
     color: var(--color-headline);
     text-align: center;
     position: relative;
@@ -193,6 +195,8 @@
     }
     .features-live__headline {
         max-width: 100%;
+        font-size: 28px;
+        line-height: 34px;
     }
 }
 
@@ -244,16 +248,20 @@
     }
     .features-live {
         margin: 96px 0;
-    }    
-    .features-live__headline,
+    }
+    .features-live__headline {
+        font-size: 36px;
+        line-height: 44px;
+    }
     .features-quiz__headline {
         font-size: 44px;
         line-height: 52px;
     }
     .features-live__lead {
-        font-size: 20px;
-        line-height: 30px;
-        max-width: 780px;
+        // font-size: 20px;
+        // line-height: 30px;
+        // max-width: 780px;
+        max-width: 690px;
     }
     .features-live__examples {
         margin: 64px auto 24px auto;
